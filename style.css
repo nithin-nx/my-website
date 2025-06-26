@@ -37,6 +37,7 @@ a {
   gap: 20px;
   list-style: none;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .nav-list li a {
@@ -71,10 +72,7 @@ a {
   background-color: #f0f0f0;
 }
 
-.about,
-.gallery,
-.video,
-.contact {
+section {
   padding: 60px 0;
 }
 

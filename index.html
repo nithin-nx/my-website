@@ -2,44 +2,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Simple Website</title>
+  <title>My Modern Website</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="container">
-      <h1>Welcome to My Website</h1>
-      <nav>
-        <ul>
+      <h1 class="logo">MySite</h1>
+      <nav class="navbar">
+        <ul class="nav-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
-  </header>  <main>
-    <section id="home">
-      <div class="container">
-        <h2>Simple. Clean. Fast.</h2>
-        <p>This is a redesigned version of a simple static website. It is clean, responsive, and made entirely by hand.</p>
-      </div>
-    </section><section id="about">
-  <div class="container">
-    <h2>About This Site</h2>
-    <p>This website was redesigned as part of a college project. It is minimal, modern, and easy to use.</p>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>Email: contact@example.com</p>
-  </div>
-</section>
-
-  </main>  <footer>
+  </header>  <section class="hero" id="home">
     <div class="container">
-      <p>&copy; 2025 My Website. All rights reserved.</p>
+      <h2>Welcome to My Modern Website</h2>
+      <p>A clean and responsive website built manually for a college project.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>  <section class="about" id="about">
+    <div class="container">
+      <h2>About This Site</h2>
+      <p>This site demonstrates how a simple HTML and CSS redesign can improve aesthetics and functionality while avoiding any AI-generated content.</p>
+    </div>
+  </section>  <section class="services" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-box">
+          <h3>Design</h3>
+          <p>Modern and clean UI design tailored to your needs.</p>
+        </div>
+        <div class="service-box">
+          <h3>Development</h3>
+          <p>Responsive, fast, and secure website development from scratch.</p>
+        </div>
+        <div class="service-box">
+          <h3>Support</h3>
+          <p>Ongoing support and updates to keep your site fresh.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 MySite. All rights reserved.</p>
     </div>
   </footer>
 </body>
